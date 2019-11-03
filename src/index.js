@@ -1,4 +1,17 @@
 import * as THREE from 'three';
+import * as Stats from 'stats.js';
+
+const stats = new Stats();
+stats.showPanel(0);
+document.body.appendChild(stats.dom);
+
+const animateStats = function(){
+    stats.begin();
+    stats.end();
+    requestAnimationFrame(animateStats);
+}
+
+requestAnimationFrame(animateStats);
 
 const scene = new THREE.Scene();
 const aspect = window.innerWidth / window.innerHeight;
