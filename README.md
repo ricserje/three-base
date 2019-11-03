@@ -1,4 +1,4 @@
 # three-base
-Minimal three webpack setup
+Minimal THREEJS webpack setup
 
 npm run start:dev
